@@ -7,6 +7,10 @@
   --hover-accent: #e8b88d;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* ============================================
   RESET Y BASE
 ============================================ */
@@ -47,6 +51,9 @@ header.scrolled {
   align-items: center;
 }
 
+.header-content span{
+  color: var(--text-light);
+}
 /* ============================================
  LOGO
 ============================================ */
@@ -221,6 +228,7 @@ nav a.active {
 
 /* Título */
 .hero-text h1 {
+  color: var(--text-light);
   font-size: 2.8rem;
   font-weight: 800;
   line-height: 1.2;
@@ -452,6 +460,10 @@ nav a.active {
   flex-wrap: wrap;
   gap: 40px;
 }
+
+.footer-brand span{
+  color: var(--text-light);
+} 
 
 .footer-brand h2 {
   font-size: 28px;
