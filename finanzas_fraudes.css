@@ -493,6 +493,11 @@ nav a.active {
   object-fit: contain;
 }
 
+.footer-logo span{
+   color: var(--text-light);
+}
+
+
 .footer-contact h3 {
   font-size: 26px;
   margin: 0 0 20px;
