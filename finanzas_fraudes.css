@@ -493,7 +493,7 @@ nav a.active {
   object-fit: contain;
 }
 
-.footer-logo span{
+.footer-logo h2{
    color: var(--text-light);
 }
 
