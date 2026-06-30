@@ -472,6 +472,7 @@ nav a.active {
 
 .footer-brand h2 span {
   display: block;
+  color: var(--text-light);
 }
 
 .footer-brand h2 .accent {
