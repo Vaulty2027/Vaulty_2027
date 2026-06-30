@@ -1,0 +1,435 @@
+:root {
+  --primary-dark: #1a2332;
+  --primary-accent: #d4a574;
+  --text-light: #ffffff;
+  --text-muted: #b8c5d6;
+  --border-color: #2d3e52;
+  --hover-accent: #e8b88d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f1a2e;
+  color: #ffffff;
+}
+
+a { text-decoration: none; color: inherit; }
+
+/* ============================================
+   HEADER / NAV
+============================================ */
+header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: linear-gradient(180deg, rgba(26,35,50,0.95) 0%, rgba(26,35,50,0.85) 100%);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  padding: 6px 24px;
+}
+
+header.scrolled {
+  background: linear-gradient(180deg, rgba(26,35,50,0.98) 0%, rgba(26,35,50,0.9) 100%);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.logo-icon { width: 48px; height: 48px; }
+.logo-icon img { width: 100%; height: 100%; object-fit: contain; }
+
+nav { display: flex; gap: 70px; align-items: center; }
+
+nav a {
+  color: var(--text-light);
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover { color: var(--primary-accent); }
+
+nav a.active {
+  color: var(--primary-accent);
+  border-bottom: 2px solid var(--primary-accent);
+  padding-bottom: 6px;
+}
+
+.nav-item { position: relative; display: inline-flex; align-items: center; }
+.nav-item > a { display: flex; align-items: center; gap: 4px; }
+.nav-item.open .dropdown-menu { display: block; }
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  background: rgba(26,35,50,0.97);
+  backdrop-filter: blur(10px);
+  border-top: 2px solid var(--primary-accent);
+  min-width: 170px;
+  list-style: none;
+  padding: 6px 0;
+  z-index: 1001;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 19px !important;
+  color: var(--text-light);
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  border-bottom: none !important;
+}
+
+.dropdown-menu li a:hover { color: var(--primary-accent); }
+.dropdown-menu li a.active { color: var(--primary-accent); text-decoration: underline; }
+
+.nav-right { display: flex; align-items: center; margin-right: 40px; }
+
+.language-switcher { display: flex; gap: 12px; align-items: center; }
+
+.language-switcher img {
+  width: 28px; height: 28px;
+  object-fit: contain;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  border-radius: 2px;
+}
+
+.language-switcher img:hover,
+.language-switcher img.active { opacity: 1; border-radius: 4px; }
+
+/* ============================================
+   HERO — ocupa 100vh con imagen de fondo
+============================================ */
+.hero-impuestos {
+  position: relative;
+  height: 100vh;           /* pantalla completa */
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 0;           /* sin margen, va debajo del header fijo */
+  text-align: center;
+}
+
+.hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* llena todo el contenedor */
+  object-position: center;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 26, 46, 0.60);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 32px;
+  max-width: 620px;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: var(--text-light);
+}
+
+.hero-content p {
+  color: var(--text-muted);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* ============================================
+   TIPOS DE IMPUESTOS — fondo crema
+============================================ */
+.tipos-section {
+  background: #f5f0e8;
+  padding: 64px 48px;
+}
+
+.tipos-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tipos-container h2 {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--primary-dark);
+  margin-bottom: 16px;
+}
+
+.tipos-desc {
+  color: #444;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.tipos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.tipo-card {
+  background: var(--primary-dark);
+  border-radius: 14px;
+  padding: 28px 24px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.tipo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.tipo-icono {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tipo-icono img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.tipo-card h3 {
+  color: var(--primary-accent);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.tipo-card p {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* ============================================
+   QUIÉN PAGA + IMAGEN + DATO CURIOSO
+============================================ */
+.quien-section {
+  background: #0f1a2e;
+  padding: 64px 48px;
+}
+
+.quien-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* Columna izquierda */
+.quien-texto {
+  background: var(--primary-dark);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.quien-texto h2 {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 28px;
+  text-align: center;
+  color: var(--text-light);
+}
+
+.quien-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.quien-icono {
+  background: rgba(255,255,255,0.08);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quien-icono img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.quien-item h3 {
+  color: var(--primary-accent);
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.quien-item p {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Columna derecha */
+.quien-derecha {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.quien-img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.sabias-que {
+  background: var(--primary-dark);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.sabias-que h3 {
+  color: var(--primary-accent);
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.sabias-que p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ============================================
+   FOOTER
+============================================ */
+.footer-top {
+  background: linear-gradient(180deg, #0a0f1c 0%, #111827 100%);
+  padding: 56px 32px;
+}
+
+.footer-top-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-brand h2 {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.3;
+  margin: 0 0 20px;
+}
+
+.footer-brand h2 span { display: block; }
+.footer-brand h2 .accent { color: var(--primary-accent); }
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.footer-logo img { width: 60px; height: 60px; object-fit: contain; }
+
+.footer-contact h3 { font-size: 26px; margin: 0 0 20px; color: var(--text-light); }
+
+.contact-links { display: flex; gap: 16px; align-items: center; min-height: 44px; }
+
+.footer-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px; height: 64px;
+  transition: transform 0.3s ease;
+}
+
+.footer-icon img {
+  width: 50px; height: 50px;
+  object-fit: contain;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.footer-icon:hover { transform: translateY(-3px); }
+.footer-icon:hover img { opacity: 1; }
+
+.footer-bottom { background: var(--border-color); padding: 24px 32px; }
+
+.copyright { max-width: 1400px; margin: 0 auto; color: #d0d0d0; font-size: 15px; }
+
+/* ============================================
+   RESPONSIVE
+============================================ */
+@media (max-width: 1024px) {
+  .tipos-grid { grid-template-columns: repeat(2, 1fr); }
+  .quien-container { grid-template-columns: 1fr; }
+  nav { gap: 24px; }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 { font-size: 36px; }
+  .tipos-section, .quien-section { padding: 48px 24px; }
+  .tipos-grid { grid-template-columns: 1fr; }
+  nav { gap: 16px; }
+  nav a { font-size: 13px; }
+  .footer-top-inner { flex-direction: column; align-items: center; text-align: center; }
+}

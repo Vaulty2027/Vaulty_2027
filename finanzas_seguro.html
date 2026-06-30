@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaulty+ - Seguro Social</title>
+    <link rel="stylesheet" href="finanzas_seguro.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header">
+    <div class="header-content">
+        <div class="logo">
+            <div class="logo-icon"><img src="img/logo_vaulty+.png" alt="Logo Vaulty+"></div>
+            <span>Vaulty+</span>
+        </div>
+
+        <nav>
+            <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+
+            <div class="nav-item dropdown">
+                <a href="finanzas.html" data-es="Finanzas Panamá" data-en="Panama's Financial Sector">Finanzas Panamá</a>
+                <ul class="dropdown-menu">
+                    <li><a href="finanzas_fraudes.html" data-es="Fraudes" data-en="Frauds">Fraudes</a></li>
+                    <li><a href="finanzas_impuestos.html" data-es="Impuestos" data-en="Taxes">Impuestos</a></li>
+                    <li><a href="finanzas_seguro.html" data-es="Seguro Social" data-en="Social Security">Seguro Social</a></li>
+                    <li><a href="finanzas_prestamos.html" data-es="Préstamos" data-en="Loans">Préstamos</a></li>
+                    <li><a href="finanzas_apc.html" data-es="APC" data-en="APC">APC</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-item dropdown">
+                <a href="tutoriales.html" data-es="Tutoriales" data-en="Tutorials">Tutoriales</a>
+                <ul class="dropdown-menu">
+                    <li><a href="tutoriales_podcast.html" data-es="Podcast" data-en="Podcast">Podcast</a></li>
+                    <li><a href="tutoriales_assesorias.html" data-es="Asesorías" data-en="Advisory">Asesorías</a></li>
+                    <li><a href="tutoriales_trading.html" data-es="Trading" data-en="Trading">Trading</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-item dropdown">
+                <a href="aprende.html" data-es="Aprende" data-en="Learn">Aprende</a>
+                <ul class="dropdown-menu">
+                    <li><a href="aprende_glosario.html" data-es="Glosario" data-en="Glossary">Glosario</a></li>
+                    <li><a href="aprende_guias.html" data-es="Guías" data-en="Guides">Guías</a></li>
+                    <li><a href="aprende_juegos.html" data-es="Juegos" data-en="Games">Juegos</a></li>
+                    <li><a href="aprende_monedas.html" data-es="Monedas" data-en="Coins">Monedas</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-item dropdown">
+                <a href="ayuda.html" data-es="Ayuda" data-en="Help">Ayuda</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" data-es="Preguntas Frecuentes" data-en="Frequently Asked Questions">Preguntas Frecuentes</a></li>
+                    <li><a href="#" data-es="Contacto" data-en="Contact">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="nav-right">
+            <div class="language-switcher">
+                <img src="img/spain.png" alt="ES" title="Español" onclick="setLang('es')">
+                <img src="img/ingles.png" alt="EN" title="English" onclick="setLang('en')">
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero-seguros">
+    <img src="img/seguro-social.png" alt="Seguro Social Panamá" class="hero-img">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>
+            <span data-es="SEGURO" data-en="SOCIAL">SEGURO</span>
+            <span data-es="SOCIAL" data-en="SECURITY">SOCIAL</span>
+        </h1>
+        <p data-es="Aprende sobre información clara sobre requisitos, aportes, beneficios y la situación financiera del sistema de seguridad financiera en Panamá"
+           data-en="Learn about clear information on eligibility requirements, contributions, benefits, and the financial status of Panama's Social Security system">
+            Aprende sobre información clara sobre requisitos, aportes, beneficios y la situación financiera del sistema de seguridad financiera en Panamá
+        </p>
+    </div>
+</section>
+
+<!-- SECCIONES 1 y 2 -->
+<section class="info-section bg-dark">
+    <div class="info-grid">
+
+        <!-- BLOQUE 1: Requisitos de jubilación -->
+        <div class="bloque">
+            <div class="bloque-titulo">
+                <span class="num-badge">1</span>
+                <h2 data-es="Requisitos de jubilación Normal" data-en="Normal Retirement Requirements">Requisitos de jubilación Normal</h2>
+            </div>
+            <div class="iconos-fila">
+                <div class="icono-item">
+                    <img src="iconos/hombre.png" alt="Hombres">
+                    <p class="icono-label" data-es="Hombres" data-en="Men">Hombres</p>
+                    <p class="icono-valor accent" data-es="62 AÑOS" data-en="62 YEARS">62 AÑOS</p>
+                </div>
+                <div class="icono-item">
+                    <img src="iconos/mujer.png" alt="Mujeres">
+                    <p class="icono-label" data-es="Mujeres" data-en="Women">Mujeres</p>
+                    <p class="icono-valor accent" data-es="57 AÑOS" data-en="57 YEARS">57 AÑOS</p>
+                </div>
+                <div class="icono-item">
+                    <img src="iconos/calendario.png" alt="Cuotas">
+                    <p class="icono-label" data-es="Cuotas necesarias" data-en="Required Contributions">Cuotas necesarias</p>
+                    <p class="icono-valor accent" data-es="240 CUOTAS" data-en="240 CONTRIBUTIONS">240 CUOTAS</p>
+                </div>
+                <div class="icono-item">
+                    <img src="iconos/reloj-de-pared.png" alt="Mínimo">
+                    <p class="icono-label" data-es="Mínimo Necesario" data-en="Minimum Required">Mínimo Necesario</p>
+                    <p class="icono-valor accent" data-es="20 AÑOS" data-en="20 YEARS">20 AÑOS</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- BLOQUE 2: Cómo se calcula la pensión -->
+        <div class="bloque">
+            <div class="bloque-titulo">
+                <span class="num-badge">2</span>
+                <h2 data-es="¿Cómo se calcula la pensión?" data-en="How is the pension calculated?">¿Cómo se calcula la pensión?</h2>
+            </div>
+            <div class="calculo-fila">
+                <div class="calculo-item">
+                    <img src="iconos/barra-grafica.png" alt="Promedio">
+                    <p data-es="Promedio de los mejores 10 años cotizados" data-en="Average of the best 10 years contributed">Promedio de los mejores 10 años cotizados</p>
+                </div>
+                <span class="flecha-calculo">→</span>
+                <div class="calculo-item calculo-destacado">
+                    <img src="iconos/billetera.png" alt="salario">
+                    <p data-es="60% del salario" data-en="60% of salary">60% del salario</p>
+                </div>
+                <span class="flecha-calculo">→</span>
+                <div class="calculo-item">
+                    <img src="iconos/grafica.png" alt="Extra">
+                    <p data-es="+1.25% por cada 12 cuotas extra sobre el mínimo" data-en="+1.25% for every 12 extra contributions above the minimum">+1.25% por cada 12 cuotas extra sobre el mínimo</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- SECCIONES 3 y 4 -->
+<section class="info-section bg-darker">
+    <div class="info-grid">
+
+        <!-- BLOQUE 3: Jubilación proporcional -->
+        <div class="bloque">
+            <div class="bloque-titulo">
+                <span class="num-badge">3</span>
+                <h2 data-es="Jubilación proporcional" data-en="Proportional Retirement">Jubilación proporcional</h2>
+            </div>
+            <p class="bloque-sub" data-es="¿No llegaste a 240 cuotas?" data-en="Didn't reach 240 contributions?">¿No llegaste a 240 cuotas?</p>
+            <p class="bloque-desc" data-es="Si tienes al menos:" data-en="If you have at least:">Si tienes al menos:</p>
+            <div class="cuotas-badge">
+                <img src="iconos/contabilidad.png" alt="Cuotas">
+                <div class="cuotas-info">
+                    <span class="cuotas-num">180 <span data-es="cuotas" data-en="contributions">cuotas</span></span>
+                    <span class="cuotas-check">✔</span>
+                </div>
+            </div>
+            <p class="bloque-desc" data-es="Puedes optar por una pensión proporcional basada en tus aportes acumulados"
+               data-en="You may opt for a proportional pension based on your accumulated contributions">
+                Puedes optar por una pensión proporcional basada en tus aportes acumulados
+            </p>
+        </div>
+
+        <!-- BLOQUE 4: Condiciones para el 60% -->
+        <div class="bloque">
+            <div class="bloque-titulo">
+                <span class="num-badge">4</span>
+                <h2 data-es="Condiciones para obtener el 60% de reemplazo" data-en="Conditions to obtain 60% replacement">Condiciones para obtener el 60% de reemplazo</h2>
+            </div>
+            <ul class="condiciones-lista">
+                <li>
+                    <img src="iconos/check.png" alt="check">
+                    <span data-es="Cotizar al menos 5 veces al año" data-en="Contribute at least 5 times per year">Cotizar al menos 5 veces al año</span>
+                </li>
+                <li>
+                    <img src="iconos/check.png" alt="check">
+                    <span data-es="No exceder 6 años sin cotizar" data-en="Not exceed 6 years without contributing">No exceder 6 años sin cotizar</span>
+                </li>
+                <li>
+                    <img src="iconos/check.png" alt="check">
+                    <span data-es="Tener 5 años consecutivos de aportes" data-en="Have 5 consecutive years of contributions">Tener 5 años consecutivos de aportes</span>
+                </li>
+                <li>
+                    <img src="iconos/check.png" alt="check">
+                    <span data-es="Que al menos el 50% de las cuotas hayan sido aportadas en los primeros 20 años laborales"
+                          data-en="At least 50% of contributions made in the first 20 working years">
+                        Que al menos el 50% de las cuotas hayan sido aportadas en los primeros 20 años laborales
+                    </span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- SECCIONES 5 y 6 -->
+<section class="info-section bg-dark">
+    <div class="info-grid">
+
+        <!-- BLOQUE 5: Recaudación conjunta -->
+        <div class="bloque">
+            <div class="bloque-titulo">
+                <span class="num-badge">5</span>
+                <h2 data-es="Recaudación conjunta" data-en="Joint Collection">Recaudación conjunta</h2>
+            </div>
+            <p class="bloque-desc" data-es="La CSS y la Dirección General de Ingresos (DGI) trabajan conjuntamente en la recaudación de tributos y cuotas"
+               data-en="The CSS and the General Directorate of Revenue (DGI) work together in the collection of taxes and contributions">
+                La CSS y la Dirección General de Ingresos (DGI) trabajan conjuntamente en la recaudación de tributos y cuotas
+            </p>
+            <div class="recaudacion-grid">
+                <!-- Trabajador -->
+                <div class="recaudacion-card">
+                    <div class="recaudacion-header">
+                        <span data-es="Trabajador" data-en="Worker">Trabajador</span>
+                    </div>
+                    <img src="iconos/imagen-de-perfil.png" alt="Trabajador">
+                    <div class="recaudacion-fila">
+                        <span data-es="CSS" data-en="CSS">CSS</span>
+                        <span class="accent">9.75%</span>
+                    </div>
+                    <div class="recaudacion-fila">
+                        <span data-es="Seguro Educativo" data-en="Educational Insurance">Seguro Educativo</span>
+                        <span class="accent">1.25%</span>
+                    </div>
+                    <div class="recaudacion-total">
+                        <span data-es="TOTAL" data-en="TOTAL">TOTAL</span>
+                        <span class="accent">11.00%</span>
+                    </div>
+                    <p class="recaudacion-pie" data-es="Del salario bruto" data-en="Of gross salary">Del salario bruto</p>
+                </div>
+
+                <!-- Empleador -->
+                <div class="recaudacion-card">
+                    <div class="recaudacion-header">
+                        <span data-es="Empleador" data-en="Employer">Empleador</span>
+                    </div>
+                    <img src="iconos/edificios.png" alt="Empleador">
+                    <div class="recaudacion-fila">
+                        <span data-es="CSS" data-en="CSS">CSS</span>
+                        <span class="accent">13.25%</span>
+                    </div>
+                    <div class="recaudacion-fila">
+                        <span data-es="Seguro Educativo" data-en="Educational Insurance">Seguro Educativo</span>
+                        <span class="accent">1.50%</span>
+                    </div>
+                    <div class="recaudacion-total">
+                        <span data-es="TOTAL" data-en="TOTAL">TOTAL</span>
+                        <span class="accent">14.75%</span>
+                    </div>
+                    <p class="recaudacion-pie" data-es="Del salario bruto" data-en="Of gross salary">Del salario bruto</p>
+                </div>
+
+                <!-- Estado DGI -->
+                <div class="recaudacion-card">
+                    <div class="recaudacion-header">
+                        <span data-es="Estado DGI" data-en="State DGI">Estado DGI</span>
+                    </div>
+                    <p class="recaudacion-desc" data-es="ISR (IMPUESTO SOBRE LA RENTA)" data-en="ISR (INCOME TAX)">ISR (IMPUESTO SOBRE LA RENTA)</p>
+                    <p class="recaudacion-desc" data-es="Retenido de los salarios de los empleados, gestionado por la CSS pero perteneciente al Tesoro Nacional (DGI)."
+                       data-en="Withheld from employee salaries, managed by the CSS but belonging to the National Treasury (DGI).">
+                        Retenido de los salarios de los empleados, gestionado por la CSS pero perteneciente al Tesoro Nacional (DGI).
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- BLOQUE 6: Plazo de prescripción -->
+        <div class="bloque">
+            <div class="bloque-titulo">
+                <span class="num-badge">6</span>
+                <h2 data-es="Plazo de prescripción de deudas" data-en="Debt Prescription Period">Plazo de prescripción de deudas</h2>
+            </div>
+            <div class="prescripcion-lista">
+                <div class="prescripcion-item">
+                    <div class="prescripcion-barra barra-larga"></div>
+                    <span class="prescripcion-label" data-es="Cuotas Seguro Social (CSS)" data-en="Social Security Contributions (CSS)">Cuotas Seguro Social (CSS)</span>
+                    <span class="prescripcion-años accent" data-es="20 AÑOS" data-en="20 YEARS">20 AÑOS</span>
+                </div>
+                <div class="prescripcion-item">
+                    <div class="prescripcion-barra barra-media"></div>
+                    <span class="prescripcion-label" data-es="Impuestos sobre la renta (ISR)" data-en="Income Tax (ISR)">Impuestos sobre la renta (ISR)</span>
+                    <span class="prescripcion-años accent" data-es="7 AÑOS" data-en="7 YEARS">7 AÑOS</span>
+                </div>
+                <div class="prescripcion-item">
+                    <div class="prescripcion-barra barra-corta"></div>
+                    <span class="prescripcion-label">ITBMS</span>
+                    <span class="prescripcion-años accent" data-es="5 AÑOS" data-en="5 YEARS">5 AÑOS</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-top-inner">
+            <div class="footer-brand">
+                <h2>
+                    <span data-es="SECURE YOUR MONEY," data-en="SECURE YOUR MONEY,">SECURE YOUR MONEY,</span>
+                    <span class="accent" data-es="UNLOCK YOUR GOALS" data-en="UNLOCK YOUR GOALS">UNLOCK YOUR GOALS</span>
+                </h2>
+                <div class="footer-logo">
+                    <img src="img/logo_vaulty+.png" alt="Logo Vaulty+">
+                    <span>Vaulty+</span>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h3 data-es="Contáctanos" data-en="Contact us">Contáctanos</h3>
+                <div class="contact-links">
+                    <a href="https://github.com/Vaulty2027" class="footer-icon" aria-label="GitHub" target="_blank" rel="noopener">
+                        <img src="iconos/github.png" alt="GitHub">
+                    </a>
+                    <a href="mailto:vaultypty@gmail.com" class="footer-icon" aria-label="Correo">
+                        <img src="iconos/correo.png" alt="Correo">
+                    </a>
+                    <a href="https://www.facebook.com/share/1E4h8KaVst/?mibextid=wwXIfr" class="footer-icon" aria-label="Facebook" target="_blank" rel="noopener">
+                        <img src="iconos/facebook.png" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p class="copyright" data-es="© 2026 Vaulty+ - Todos los derechos reservados." data-en="© 2026 Vaulty+ - All rights reserved.">
+            © 2026 Vaulty+ - Todos los derechos reservados.
+        </p>
+    </div>
+</footer>
+
+<script src="finanzas_seguro.js"></script>
+</body>
+</html>

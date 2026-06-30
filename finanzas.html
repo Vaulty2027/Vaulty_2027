@@ -1,0 +1,134 @@
+<!--Declaración HTML-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="finanzas.css">
+    <title>Vaulty+ - Finanzas</title>
+
+</head>
+<body>
+  <!-- HEADER -->
+  <header id="header">
+    <div class="header-content">
+     <!-- Logo -->
+     <div class="logo">
+       <div class="logo-icon"><img src="img/logo_vaulty+.png"></div>
+        <span>Vaulty+</span>
+    </div>
+
+    <!-- Navegación -->
+    <nav>
+      <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+
+      <div class="nav-item dropdown">
+        <a href="finanzas.html" class="active" data-es="Finanzas Panamá" data-en="Panama's financial sector">Finanzas Panamá </a>
+        <ul class="dropdown-menu">
+          <li><a href="finanzas_fraudes.html" data-es="Fraudes" data-en="Frauds">Fraudes</a></li>
+          <li><a href="finanzas_impuestos.html" data-es="Impuestos" data-en="Taxes">Impuestos</a></li>
+          <li><a href="finanzas_seguro.html" data-es="Seguro Social" data-en="Social Security">Seguro Social</a></li>
+          <li><a href="finanzas_prestamos.html" data-es="Prestamos" data-en="Loans">Prestamos</a></li>
+          <li><a href="finanzas_apc.html" data-es="APC" data-en="APC">APC</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-item dropdown">
+        <a href="tutoriales.html" data-es="Tutoriales" data-en="Tutorials">Tutoriales </a>
+        <ul class="dropdown-menu">
+         <li><a href="tutoriales_podcast.html" data-es="Podcast" data-en="Podcast">Podcast</a></li>
+         <li><a href="tutoriales_assesorias.html" data-es="Asesorias" data-en="Advisory">Asesorias</a></li>
+         <li><a href="tutoriales_trading.html" data-es="Trading" data-en="Trading">Trading</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-item dropdown">
+        <a href="aprende.html" data-es="Aprende" data-en="Learn">Aprende</a>
+        <ul class="dropdown-menu">
+          <li><a href="aprende_glosario.html" data-es="Glosarios" data-en="Glossary">Glosario</a></li>
+          <li><a href="aprende_guias.html" data-es="Guias" data-en="Guides">Guías</a></li>
+          <li><a href="aprende_juegos.html" data-es="Juegos" data-en="Games">Juegos</a></li>
+          <li><a href="aprende_monedas.html" data-es="Monedas" data-en="Coins">Monedas</a></li>
+        </ul>
+     </div>
+
+     <div class="nav-item dropdown">
+       <a href="ayuda.html" data-es="Ayuda" data-en="Help">Ayuda </a>
+        <ul class="dropdown-menu"> 
+          <li><a href="#"data-es="Preguntas Frecuentes" data-en="Frequently Asked Questions">Preguntas Frecuentes</a></li>
+          <li><a href="#"data-es="Contacto" data-en="Contact">Contacto</a></li>
+        </ul>
+     </div>
+
+    </nav>
+
+    <!-- Selector de idioma -->
+    <div class="nav-right">
+      <div class="language-switcher">
+        <img src="img/spain.png" alt="ES" title="Español" onclick="setLang('es')" />
+        <img src="img/ingles.png" alt="EN" title="English" onclick="setLang('en')" />
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <!-- HERO — sección principal -->
+  <section class="hero-finanzas">
+    <img src="img/finanza_principal.png" alt="fondo finanzas" class="hero-finanzas-img">
+    <div class="hero-finanzas-bg"></div>
+    <div class="hero-finanzas-content">
+      <h1 data-es="SECURE YOUR MONEY" data-en="SECURE YOUR MONEY">
+        SECURE YOUR MONEY,
+        <span class="accent" data-es="UNLOCK YOUR GOALS" data-en="UNLOCK YOUR GOALS">UNLOCK YOUR GOALS</span>
+      </h1>
+      <p data-es="Herramientas y conocimientos para tomar el control de tus finanzas y lograr tu estabilidad financiera."
+         data-en="Tools and knowledge to take control of your finances and achieve financial stability.">
+        Herramientas y conocimientos para tomar el control de tus finanzas y lograr tu estabilidad financiera.
+      </p>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-top-inner">
+
+                <div class="footer-brand">
+                    <h2>
+                        <span data-es="SECURE YOUR MONEY," data-en="SECURE YOUR MONEY,">SECURE YOUR MONEY,</span>
+                        <span class="accent" data-es="UNLOCK YOUR GOALS" data-en="UNLOCK YOUR GOALS">UNLOCK YOUR GOALS</span>
+                    </h2>
+                    <div class="footer-logo">
+                        <img src="img/logo_vaulty+.png" alt="Logo Vaulty+">
+                        <span>Vaulty+</span>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 data-es="Contáctanos" data-en="Contact us">Contáctanos</h3>
+                    <div class="contact-links">
+                        <a href="https://github.com/Vaulty2027" class="footer-icon" aria-label="GitHub" target="_blank" rel="noopener">
+                            <img src="iconos/github.png" alt="GitHub">
+                        </a>
+                        <a href="mailto:info@vaultyplus.com" class="footer-icon" aria-label="Correo">
+                            <img src="iconos/correo.png" alt="Correo">
+                        </a>
+                        <a href="#" class="footer-icon" aria-label="Facebook" target="_blank" rel="noopener">
+                            <img src="iconos/facebook.png" alt="Facebook">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright" data-es="© 2026 Vaulty+ - Todos los derechos reservados." data-en="© 2026 Vaulty+ - All rights reserved.">
+                © 2026 Vaulty+ - Todos los derechos reservados.
+            </p>
+        </div>
+  </footer>
+
+  <script src="index.js"></script>
+
+</body>
+</html>

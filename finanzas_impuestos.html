@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="finanzas_impuestos.css">
+  <title>Vaulty+ - Impuestos</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="header-content">
+      <div class="logo">
+        <div class="logo-icon"><img src="img/logo_vaulty+.png" alt="Vaulty+"></div>
+        <span>Vaulty+</span>
+      </div>
+
+      <nav>
+        <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+
+        <div class="nav-item dropdown">
+          <a href="finanzas.html" data-es="Finanzas Panamá" data-en="Panama's financial sector">Finanzas Panamá</a>
+          <ul class="dropdown-menu">
+            <li><a href="finanzas_fraudes.html" data-es="Fraudes" data-en="Frauds">Fraudes</a></li>
+            <li><a href="finanzas_impuestos.html" data-es="Impuestos" data-en="Taxes">Impuestos</a></li>
+            <li><a href="finanzas_seguro.html" data-es="Seguro Social" data-en="Social Security">Seguro Social</a></li>
+            <li><a href="finanzas_hipotecas.html" data-es="Hipotecas" data-en="Mortgages">Hipotecas</a></li>
+            <li><a href="finanzas_apc.html" data-es="APC" data-en="APC">APC</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item dropdown">
+          <a href="tutoriales.html" data-es="Tutoriales" data-en="Tutorials">Tutoriales</a>
+          <ul class="dropdown-menu">
+            <li><a href="tutoriales_podcast.html" data-es="Podcast" data-en="Podcast">Podcast</a></li>
+            <li><a href="tutoriales_assesorias.html" data-es="Asesorías" data-en="Advisory">Asesorías</a></li>
+            <li><a href="tutoriales_trading.html" data-es="Trading" data-en="Trading">Trading</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item dropdown">
+          <a href="aprende.html" data-es="Aprende" data-en="Learn">Aprende</a>
+          <ul class="dropdown-menu">
+            <li><a href="aprende_glosario.html" data-es="Glosario" data-en="Glossary">Glosario</a></li>
+            <li><a href="aprende_guias.html" data-es="Guías" data-en="Guides">Guías</a></li>
+            <li><a href="aprende_juegos.html" data-es="Juegos" data-en="Games">Juegos</a></li>
+            <li><a href="aprende_monedas.html" data-es="Monedas" data-en="Coins">Monedas</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item dropdown">
+          <a href="ayuda.html" data-es="Ayuda" data-en="Help">Ayuda</a>
+          <ul class="dropdown-menu">
+            <li><a href="#" data-es="Preguntas Frecuentes" data-en="Frequently Asked Questions">Preguntas Frecuentes</a></li>
+            <li><a href="#" data-es="Contacto" data-en="Contact">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="nav-right">
+        <div class="language-switcher">
+          <img src="img/spain.png" alt="ES" title="Español" onclick="setLang('es')">
+          <img src="img/ingles.png" alt="EN" title="English" onclick="setLang('en')">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO — pantalla completa con imagen de fondo -->
+  <section class="hero-impuestos">
+    <img src="img/impuestos.png" class="hero-img">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 data-es="Impuestos" data-en="Taxes">Impuestos</h1>
+      <p data-es="Aprende cómo funcionan los impuestos, quiénes deben pagarlos y cómo contribuyen al desarrollo del país."
+         data-en="Learn how taxes work, who must pay them and how they contribute to the country's development.">
+        Aprende cómo funcionan los impuestos, quiénes deben pagarlos y cómo contribuyen al desarrollo del país.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 1 — Tipos de impuestos -->
+  <section class="tipos-section">
+    <div class="tipos-container">
+
+      <h2 data-es="Tipos de impuestos" data-en="Types of taxes">Tipos de impuestos</h2>
+
+      <p class="tipos-desc"
+         data-es="Los impuestos son contribuciones que las personas y las empresas realizan para ayudar al funcionamiento y desarrollo del país. No todos los impuestos son iguales, ya que cada uno tiene un propósito específico y se aplica a diferentes actividades económicas. Algunos gravan el consumo de bienes y servicios, mientras que otros se relacionan con los ingresos, las propiedades o la posesión de ciertos bienes."
+         data-en="Taxes are contributions that individuals and businesses make to help the functioning and development of the country. Not all taxes are the same, as each has a specific purpose and applies to different economic activities. Some tax the consumption of goods and services, while others relate to income, property or the possession of certain assets.">
+        Los impuestos son contribuciones que las personas y las empresas realizan para ayudar al funcionamiento y desarrollo del país. No todos los impuestos son iguales, ya que cada uno tiene un propósito específico y se aplica a diferentes actividades económicas. Algunos gravan el consumo de bienes y servicios, mientras que otros se relacionan con los ingresos, las propiedades o la posesión de ciertos bienes.
+      </p>
+
+      <div class="tipos-grid">
+
+        <div class="tipo-card">
+          <div class="tipo-icono">
+            <img src="iconos/carrito-de-compras.png" alt="ITBMS">
+          </div>
+          <h3 data-es="ITBMS" data-en="ITBMS">ITBMS</h3>
+          <p data-es="Se aplica a la compra de muchos productos y servicios que consumimos. Cuando una persona compra un artículo o paga por ciertos servicios, una parte del precio corresponde a este impuesto."
+             data-en="It applies to the purchase of many products and services we consume. When a person buys an item or pays for certain services, part of the price corresponds to this tax.">
+            Se aplica a la compra de muchos productos y servicios que consumimos. Cuando una persona compra un artículo o paga por ciertos servicios, una parte del precio corresponde a este impuesto.
+          </p>
+        </div>
+
+        <div class="tipo-card">
+          <div class="tipo-icono">
+            <img src="iconos/imagen-de-perfil.png" alt="ISR">
+          </div>
+          <h3 data-es="ISR" data-en="ISR">ISR</h3>
+          <p data-es="Su objetivo es que quienes generan ingresos contribuyan al financiamiento de los servicios y proyectos públicos. Dependiendo del nivel de ingresos y de la actividad económica, el monto a pagar puede variar."
+             data-en="Its purpose is for those who generate income to contribute to the financing of public services and projects. Depending on the income level and economic activity, the amount to pay may vary.">
+            Su objetivo es que quienes generan ingresos contribuyan al financiamiento de los servicios y proyectos públicos. Dependiendo del nivel de ingresos y de la actividad económica, el monto a pagar puede variar.
+          </p>
+        </div>
+
+        <div class="tipo-card">
+          <div class="tipo-icono">
+            <img src="iconos/casa.png" alt="Inmuebles">
+          </div>
+          <h3 data-es="Inmuebles" data-en="Real Estate">Inmuebles</h3>
+          <p data-es="Se aplica a determinadas propiedades, terrenos y edificaciones. Este impuesto ayuda a financiar obras y servicios que benefician a la comunidad. El valor a pagar depende del valor de la propiedad."
+             data-en="It applies to certain properties, land and buildings. This tax helps finance works and services that benefit the community. The amount to pay depends on the value of the property.">
+            Se aplica a determinadas propiedades, terrenos y edificaciones. Este impuesto ayuda a financiar obras y servicios que benefician a la comunidad. El valor a pagar depende del valor de la propiedad.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2 — Quién paga + imagen + dato curioso -->
+  <section class="quien-section">
+    <div class="quien-container">
+
+      <!-- Columna izquierda: quién paga -->
+      <div class="quien-texto">
+        <h2 data-es="¿Quién debe pagar impuestos?" data-en="Who must pay taxes?">
+          ¿Quién debe pagar impuestos?
+        </h2>
+
+        <div class="quien-item">
+          <span class="quien-icono">
+            <img src="iconos/imagen-de-perfil.png" alt="Personas">
+          </span>
+          <div>
+            <h3 data-es="Personas" data-en="Individuals">Personas</h3>
+            <p data-es="Algunos ingresos de las personas naturales pueden estar sujetos al pago de impuestos según la ley."
+               data-en="Some income of natural persons may be subject to tax payment according to the law.">
+              Algunos ingresos de las personas naturales pueden estar sujetos al pago de impuestos según la ley.
+            </p>
+          </div>
+        </div>
+
+        <div class="quien-item">
+          <span class="quien-icono">
+            <img src="iconos/edificios.png" alt="Empresas">
+          </span>
+          <div>
+            <h3 data-es="Empresas" data-en="Companies">Empresas</h3>
+            <p data-es="Las empresas deben declarar y cumplir con sus obligaciones fiscales."
+               data-en="Companies must declare and comply with their tax obligations.">
+              Las empresas deben declarar y cumplir con sus obligaciones fiscales.
+            </p>
+          </div>
+        </div>
+
+        <div class="quien-item">
+          <span class="quien-icono">
+            <img src="iconos/maleta.png" alt="Trabajos independientes">
+          </span>
+          <div>
+            <h3 data-es="Trabajos independientes" data-en="Self-employed">Trabajos independientes</h3>
+            <p data-es="Los profesionales independientes también pueden tener responsabilidades tributarias."
+               data-en="Self-employed professionals may also have tax responsibilities.">
+              Los profesionales independientes también pueden tener responsabilidades tributarias.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna derecha: imagen + dato curioso -->
+      <div class="quien-derecha">
+        <img src="img/impuestos2.png"
+             data-img-es="img/impuestos2.png"
+             data-img-en="img/impuestos-en.png"
+             alt="Declaración de impuestos"
+             class="quien-img">
+        <div class="sabias-que">
+          <h3 data-es="¿Sabías que?" data-en="Did you know?">¿Sabías que?</h3>
+          <p data-es="Los impuestos existen desde hace miles de años. Algunas de las primeras civilizaciones ya cobraban tributos para financiar obras públicas y mantener el funcionamiento de sus gobiernos."
+             data-en="Taxes have existed for thousands of years. Some of the earliest civilizations already collected tributes to finance public works and maintain the functioning of their governments.">
+            Los impuestos existen desde hace miles de años. Algunas de las primeras civilizaciones ya cobraban tributos para financiar obras públicas y mantener el funcionamiento de sus gobiernos.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-top-inner">
+
+        <div class="footer-brand">
+          <h2>
+            <span data-es="PROTEGE TU DINERO," data-en="SECURE YOUR MONEY,">PROTEGE TU DINERO,</span>
+            <span class="accent" data-es="ALCANZA TUS OBJETIVOS" data-en="UNLOCK YOUR GOALS">ALCANZA TUS OBJETIVOS</span>
+          </h2>
+          <div class="footer-logo">
+            <img src="img/logo_vaulty+.png" alt="Logo Vaulty+">
+            <span>Vaulty+</span>
+          </div>
+        </div>
+
+        <div class="footer-contact">
+          <h3 data-es="Contáctanos" data-en="Contact us">Contáctanos</h3>
+          <div class="contact-links">
+            <a href="https://github.com/Vaulty2027" class="footer-icon" aria-label="GitHub" target="_blank" rel="noopener">
+              <img src="iconos/github.png" alt="GitHub">
+            </a>
+            <a href="mailto:vaultypty@gmail.com" class="footer-icon" aria-label="Correo">
+              <img src="iconos/correo.png" alt="Correo">
+            </a>
+            <a href="https://www.facebook.com/share/1E4h8KaVst/?mibextid=wwXIfr" class="footer-icon" aria-label="Facebook" target="_blank" rel="noopener">
+              <img src="iconos/facebook.png" alt="Facebook">
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="copyright" data-es="© 2026 Vaulty+ - Todos los derechos reservados." data-en="© 2026 Vaulty+ - All rights reserved.">
+        © 2026 Vaulty+ - Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <script src="finanzas_impuestos.js"></script>
+</body>
+</html>

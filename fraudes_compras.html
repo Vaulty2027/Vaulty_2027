@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fraudes_compras.css">
+    <title>Vaulty+ - Compras</title>
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-content">
+            <!-- Logo -->
+            <div class="logo">
+                <div class="logo-icon"><img src="img/logo_vaulty+.png" alt="Vaulty+"></div>
+                <span>Vaulty+</span>
+            </div>
+
+           <!-- Navegación -->
+           <nav>
+             <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+
+             <div class="nav-item dropdown">
+                 <a href="finanzas.html" class="active" data-es="Finanzas Panamá" data-en="Panama's financial sector">
+                   Finanzas Panamá </a>
+                 <ul class="dropdown-menu">
+                     <li><a href="finanzas_fraudes.html" class="active" data-es="Fraudes" data-en="Frauds">Fraudes</a></li>
+                     <li><a href="finanzas_impuestos.html" data-es="Impuestos" data-en="Taxes">Impuestos</a></li>
+                     <li><a href="finanzas_seguro.html" data-es="Seguro Social" data-en="Social Security">Seguro Social</a></li>
+                     <li><a href="finanzas_prestamos.html" data-es="Préstamos" data-en="Loans">Prestamos</a></li>
+                     <li><a href="finanzas_apc.html" data-es="APC" data-en="APC">APC</a></li>
+                 </ul>
+             </div>
+
+             <div class="nav-item dropdown">
+                 <a href="tutoriales.html" data-es="Tutoriales" data-en="Tutorials">
+                    Tutoriales </a>
+                 <ul class="dropdown-menu">
+                    <li><a href="tutoriales_podcast.html" data-es="Podcast" data-en="Podcast">Podcast</a></li>
+                    <li><a href="tutoriales_assesorias.html" data-es="Asesorias" data-en="Advisory">Asesorias</a></li>
+                    <li><a href="tutoriales_trading.html" data-es="Trading" data-en="Trading">Trading</a></li>
+                 </ul>
+             </div>
+
+             <div class="nav-item dropdown">
+                  <a href="aprende.html" data-es="Aprende" data-en="Learn">
+                     Aprende</a>
+                  <ul class="dropdown-menu">
+                     <li><a href="aprende_glosario.html" data-es="Glosarios" data-en="Glossary">Glosario</a></li>
+                     <li><a href="aprende_guias.html" data-es="Guias" data-en="Guides">Guías</a></li>
+                     <li><a href="aprende_juegos.html" data-es="Juegos" data-en="Games">Juegos</a></li>
+                     <li><a href="aprende_monedas.html" data-es="Monedas" data-en="Coins">Monedas</a></li>
+                  </ul>
+             </div>
+
+             <div class="nav-item dropdown">
+                 <a href="ayuda.html" data-es="Ayuda" data-en="Help">
+                    Ayuda </a>
+                  <ul class="dropdown-menu">
+                      <li><a href="#" data-es="Preguntas Frecuentes" data-en="Frequently Asked Questions">Preguntas Frecuentes</a></li>
+                      <li><a href="#" data-es="Contacto" data-en="Contact">Contacto</a></li>
+                  </ul>
+             </div>
+
+         </nav>
+
+            <!-- Selector de idioma -->
+            <div class="nav-right">
+                <div class="language-switcher">
+                    <img src="img/spain.png" alt="ES" title="Español" onclick="setLang('es')" />
+                    <img src="img/ingles.png" alt="EN" title="English" onclick="setLang('en')" />
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO — imagen de fondo con titulo a la izquierda -->
+    <section class="compras-section">
+       <img src="img/fraudes-compras.png" class="compras-image" alt="Fraudes en compras">
+       <div class="compras-overlay"></div>
+       <div class="compras-content">
+            <!-- BOTÓN DE REGRESO -->
+          <div class="volver-container">
+            <a href="finanzas_fraudes.html" class="btn-volver">
+                <span class="flecha" aria-hidden="true">←</span>
+                <span data-es="Volver a fraudes" data-en="Back to frauds">Volver a fraudes</span>
+            </a>
+          </div>
+
+           <h1>
+             <span data-es="Fraudes" data-en="Shopping">Fraudes</span>
+             <span class="accent"
+                  data-es="en compras"
+                  data-en="Fraud">
+                  en compras
+             </span>
+           </h1>
+            <p data-es="Conoce cómo identificar estafas en compras por internet y protege tu dinero al comprar productos o servicios."
+             data-en="Learn how to identify online shopping scams and protect your money when purchasing products or services online.">
+             Conoce cómo identificar estafas en compras por internet y protege tu dinero al comprar productos o servicios.
+            </p>
+        </div>
+    </section>
+
+    <!-- QUE SON Y FORMAS COMUNES -->
+      <section class="compras-section2">
+        <div class="cards-compras">
+            <div class="card">
+                <h3 data-es="¿Qué son?" data-en="What Are They?">¿Qué son?</h3>
+                <p data-es="Son estafas realizadas mediante tiendas falsas o vendedores fraudulentos que ofrecen productos inexistentes o que nunca entregan."
+                    data-en="They are scams carried out through fake online stores or fraudulent sellers who advertise products that do not exist or never deliver the items after payment.">
+                    Son estafas realizadas mediante tiendas falsas o vendedores fraudulentos que ofrecen productos inexistentes o que nunca entregan.
+                </p>
+            </div>
+            <div class="card">
+                <h3 data-es="Formas comunes" data-en="Common Methods">Formas comunes</h3>
+                <div class="formas-lista">
+               <ul>
+                   <li data-es="Tiendas en línea falsas" data-en="Fake Online Stores">Tiendas en línea falsas</li>
+                   <li data-es="Productos a precios irreales." data-en="Products Offered at Unrealistically Low Prices.">Productos a precios irreales.</li>
+                   <li data-es="Solicitud de pagos por adelantado" data-en="Requests for Upfront Payment">Solicitud de pagos por adelantado</li>
+                   <li data-es="Ventas falsas en redes sociales" data-en="Fake Sales on Social Media">Ventas falsas en redes sociales</li>
+              </ul>
+          </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÑALES DE ALERTA -->
+    <section class="alertas-section">
+        <img src="img/señales-compras.png" alt="Fondo señales de alerta" class="alerta-bg-img">
+        <div class="alerta-overlay"></div>
+        <div class="alerta-container">
+
+          <div class="alerta-bloque">
+              <h2 class="alerta-titulo-icono">
+                  <span data-es="Señales de alerta" data-en="Warning Signs">Señales de alerta</span>
+                  <span class="icono-circulo icono-alerta" aria-hidden="true">!</span>
+              </h2>
+              <div class="alerta-card">
+                  <ul>
+                      <li data-es="Precios demasiados bajos." data-en="Prices That Are Too Good to Be True.">Precios demasiados bajos.</li>
+                      <li data-es="Falta de información de contacto." data-en="Lack of Contact Information.">Falta de información de contacto.</li>
+                      <li data-es="Solo aceptan transferencias." data-en="They Only Accept Bank Transfers.">Solo aceptan transferencias.</li>
+                      <li data-es="Opiniones inexistentes o falsas." data-en="Missing or Fake Customer Reviews.">Opiniones inexistentes o falsas.</li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="alerta-divisor" aria-hidden="true"></div>
+
+          <div class="alerta-bloque">
+              <h2 class="alerta-titulo-icono">
+                  <span data-es="Cómo protegerte" data-en="How to Protect Yourself">Cómo protegerte</span>
+                  <span class="icono-circulo icono-escudo" aria-hidden="true">✓</span>
+              </h2>
+              <div class="alerta-card">
+                  <ul>
+                      <li data-es="Compra en sitios confiables." data-en="Buy from trusted websites.">Compra en sitios confiables.</li>
+                      <li data-es="Revisa opiniones de otros compradores." data-en="Check other buyers' reviews.">Revisa opiniones de otros compradores.</li>
+                      <li data-es="Utiliza métodos de pago seguros." data-en="Use secure payment methods.">Utiliza métodos de pago seguros.</li>
+                  </ul>
+              </div>
+          </div>
+
+        </div>
+   </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-top-inner">
+
+                <div class="footer-brand">
+                    <h2>
+                        <span data-es="SECURE YOUR MONEY," data-en="SECURE YOUR MONEY,">SECURE YOUR MONEY,</span>
+                        <span class="accent" data-es="UNLOCK YOUR GOALS" data-en="UNLOCK YOUR GOALS">UNLOCK YOUR GOALS</span>
+                    </h2>
+                    <div class="footer-logo">
+                        <img src="img/logo_vaulty+.png" alt="Logo Vaulty+">
+                        <span>Vaulty+</span>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 data-es="Contáctanos" data-en="Contact us">Contáctanos</h3>
+                    <div class="contact-links">
+                        <a href="https://github.com/Vaulty2027" class="footer-icon" aria-label="GitHub" target="_blank" rel="noopener">
+                            <img src="iconos/github.png" alt="GitHub">
+                        </a>
+                        <a href="mailto:vaultypty@gmail.com" class="footer-icon" aria-label="Correo">
+                            <img src="iconos/correo.png" alt="Correo">
+                        </a>
+                        <a href="https://www.facebook.com/share/1E4h8KaVst/?mibextid=wwXIfr" class="footer-icon" aria-label="Facebook" target="_blank" rel="noopener">
+                            <img src="iconos/facebook.png" alt="Facebook">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright" data-es="© 2026 Vaulty+ - Todos los derechos reservados." data-en="© 2026 Vaulty+ - All rights reserved.">
+                © 2026 Vaulty+ - Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="fraudes_compras.js"></script>
+
+</body>
+</html>

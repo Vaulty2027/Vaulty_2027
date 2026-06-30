@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaulty+ - APC</title>
+  <link rel="stylesheet" href="finanzas_apc.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="header-content">
+
+    <!-- Logo -->
+    <div class="logo">
+      <div class="logo-icon">
+        <img src="img/logo_vaulty+.png" alt="Logo Vaulty+">
+      </div>
+      <span>Vaulty+</span>
+    </div>
+
+    <!-- Navegación -->
+    <nav>
+      <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+
+      <div class="nav-item dropdown">
+        <a href="finanzas.html" class="active" data-es="Finanzas Panamá" data-en="Panama's Financial Sector">
+          Finanzas Panamá <span class="arrow">▾</span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="finanzas_fraudes.html"    data-es="Fraudes"        data-en="Frauds">Fraudes</a></li>
+          <li><a href="finanzas_impuestos.html"  data-es="Impuestos"      data-en="Taxes">Impuestos</a></li>
+          <li><a href="finanzas_seguro.html"     data-es="Seguro Social"  data-en="Social Security">Seguro Social</a></li>
+          <li><a href="finanzas_hipotecas.html"  data-es="Hipotecas"      data-en="Mortgages">Hipotecas</a></li>
+          <li><a href="finanzas_apc.html" class="active" data-es="APC" data-en="APC">APC</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-item dropdown">
+        <a href="tutoriales.html" data-es="Tutoriales" data-en="Tutorials">
+          Tutoriales <span class="arrow">▾</span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="tutoriales_podcast.html"   data-es="Podcast"    data-en="Podcast">Podcast</a></li>
+          <li><a href="tutoriales_asesorias.html" data-es="Asesorías"  data-en="Advisory">Asesorías</a></li>
+          <li><a href="tutoriales_trading.html"   data-es="Trading"    data-en="Trading">Trading</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-item dropdown">
+        <a href="aprende.html" data-es="Aprende" data-en="Learn">
+          Aprende <span class="arrow">▾</span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="aprende_glosario.html"  data-es="Glosario"  data-en="Glossary">Glosario</a></li>
+          <li><a href="aprende_guias.html"     data-es="Guías"     data-en="Guides">Guías</a></li>
+          <li><a href="aprende_juegos.html"    data-es="Juegos"    data-en="Games">Juegos</a></li>
+          <li><a href="aprende_monedas.html"   data-es="Monedas"   data-en="Coins">Monedas</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-item dropdown">
+        <a href="ayuda.html" data-es="Ayuda" data-en="Help">
+          Ayuda <span class="arrow">▾</span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#" data-es="Preguntas Frecuentes" data-en="Frequently Asked Questions">Preguntas Frecuentes</a></li>
+          <li><a href="#" data-es="Contacto"             data-en="Contact">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Idioma -->
+    <div class="nav-right">
+      <div class="language-switcher">
+        <img src="img/spain.png"  alt="ES" title="Español" onclick="setLang('es')">
+        <img src="img/ingles.png" alt="EN" title="English" onclick="setLang('en')">
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<!-- ============ HERO APC ============ -->
+<section class="apc-hero">
+  <div class="apc-hero-content">
+
+    <!-- Izquierda -->
+    <div class="apc-left">
+      <h1 data-es="APC" data-en="APC">APC</h1>
+      <h3 data-es="Asociación Panameña de Crédito" data-en="Panamanian Credit Association">
+        Asociación Panameña de Crédito
+      </h3>
+      <p data-es="El APC recopila y administra tu información crediticia para promover el crédito responsable en Panamá."
+         data-en="The APC collects and manages your credit information to promote responsible credit in Panama.">
+        El APC recopila y administra tu información crediticia para promover el crédito responsable en Panamá.
+      </p>
+    </div>
+
+    <!-- Derecha: imagen decorativa (fondo con escudo) ya viene del CSS -->
+    <div class="apc-right"></div>
+
+  </div>
+</section>
+
+<!-- ============ TARJETAS — ¿Qué contiene tu reporte? ============ -->
+<section class="apc-reporte">
+  <div class="apc-reporte-inner">
+
+    <div class="reporte-card">
+      <i class="fa-solid fa-user"></i>
+      <h4 data-es="Tu información" data-en="Your Information">Tu información</h4>
+      <p data-es="Accede a tu historial crediticio de forma fácil"
+         data-en="Access your credit history easily">
+        Accede a tu historial crediticio de forma fácil
+      </p>
+    </div>
+
+    <div class="reporte-card">
+      <i class="fa-solid fa-chart-column"></i>
+      <h4 data-es="Mejores decisiones" data-en="Better Decisions">Mejores decisiones</h4>
+      <p data-es="Accede a tu historial crediticio de forma fácil"
+         data-en="Access your credit history easily">
+        Accede a tu historial crediticio de forma fácil
+      </p>
+    </div>
+
+    <div class="reporte-card">
+      <i class="fa-solid fa-lock"></i>
+      <h4 data-es="Confianza y seguridad" data-en="Trust and Security">Confianza y seguridad</h4>
+      <p data-es="Tus datos están protegidos con altos estándares de seguridad"
+         data-en="Your data is protected with high security standards">
+        Tus datos están protegidos con altos estándares de seguridad
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ BENEFICIOS ============ -->
+<section class="apc-beneficios">
+  <div class="apc-beneficios-inner">
+
+    <div class="beneficios-texto">
+      <h2 data-es="Beneficios de un buen historial crediticio"
+          data-en="Benefits of a good credit history">
+        Beneficios de un buen historial crediticio
+      </h2>
+      <ol>
+        <li data-es="Mejores oportunidades de créditos."
+            data-en="Better credit opportunities.">
+          Mejores oportunidades de créditos.
+        </li>
+        <li data-es="Mayor confianza de las entidades financieras."
+            data-en="Greater trust from financial institutions.">
+          Mayor confianza de las entidades financieras.
+        </li>
+        <li data-es="Mejor organización de tus pagos."
+            data-en="Better organization of your payments.">
+          Mejor organización de tus pagos.
+        </li>
+      </ol>
+    </div>
+
+    <div class="beneficios-imagen">
+      <img src="img/medidor_credito.png" alt="Medidor de crédito">
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ BARRA ¿Necesitas ayuda? ============ -->
+<section class="apc-ayuda">
+  <div class="apc-ayuda-inner">
+    <span class="ayuda-titulo"
+          data-es="¿Necesitas ayuda?"
+          data-en="Need help?">
+      ¿Necesitas ayuda?
+    </span>
+
+    <div class="ayuda-item">
+      <i class="fa-solid fa-globe"></i>
+      <a href="https://apcexperian.com/" target="_blank" rel="noopener">apcexperian.com</a>
+    </div>
+
+    <div class="ayuda-item">
+      <i class="fa-solid fa-phone"></i>
+      <span>261-8161</span>
+    </div>
+
+    <div class="ayuda-item">
+      <i class="fa-solid fa-location-dot"></i>
+      <span data-es="APC Intelidat / Pasillo Delfín – Albrook"
+            data-en="APC Intelidat / Delfín–Albrook Corridor">
+        APC Intelidat / Pasillo Delfín – Albrook
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-top-inner">
+
+      <div class="footer-brand">
+        <h2>
+          <span data-es="PROTEGE TU DINERO," data-en="SECURE YOUR MONEY,">PROTEGE TU DINERO,</span>
+          <span class="accent" data-es="ALCANZA TUS OBJETIVOS" data-en="UNLOCK YOUR GOALS">ALCANZA TUS OBJETIVOS</span>
+        </h2>
+        <div class="footer-logo">
+          <img src="img/logo_vaulty+.png" alt="Logo Vaulty+">
+          <span>Vaulty+</span>
+        </div>
+      </div>
+
+      <div class="footer-contact">
+        <h3 data-es="Contáctanos" data-en="Contact us">Contáctanos</h3>
+        <div class="contact-links">
+          <a href="#" class="footer-icon" aria-label="GitHub" target="_blank" rel="noopener">
+            <img src="iconos/github.png" alt="GitHub">
+          </a>
+          <a href="mailto:info@vaultyplus.com" class="footer-icon" aria-label="Correo">
+            <img src="iconos/correo.png" alt="Correo">
+          </a>
+          <a href="#" class="footer-icon" aria-label="Facebook" target="_blank" rel="noopener">
+            <img src="iconos/facebook.png" alt="Facebook">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="copyright"
+       data-es="© 2026 Vaulty+ - Todos los derechos reservados."
+       data-en="© 2026 Vaulty+ - All rights reserved.">
+      © 2026 Vaulty+ - Todos los derechos reservados.
+    </p>
+  </div>
+</footer>
+
+<script src="finanzas_apc.js"></script>
+</body>
+</html>

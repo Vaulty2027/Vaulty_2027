@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="finanzas_fraudes.css">
+  <title>Vaulty+ - Fraudes</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="header-content">
+
+      <!-- Logo -->
+      <div class="logo">
+        <div class="logo-icon"><img src="img/logo_vaulty+.png" alt="Vaulty+"></div>
+        <span>Vaulty+</span>
+      </div>
+
+      <!-- Navegación -->
+      <nav>
+        <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+
+        <div class="nav-item dropdown">
+          <a href="finanzas.html" class="active" data-es="Finanzas Panamá" data-en="Panama's financial sector">
+            Finanzas Panamá </a>
+          <ul class="dropdown-menu">
+            <li><a href="finanzas_fraudes.html" class="active" data-es="Fraudes" data-en="Frauds">Fraudes</a></li>
+            <li><a href="finanzas_impuestos.html" data-es="Impuestos" data-en="Taxes">Impuestos</a></li>
+            <li><a href="finanzas_seguro.html" data-es="Seguro Social" data-en="Social Security">Seguro Social</a></li>
+            <li><a href="finanzas_prestamos.html" data-es="Prestamos" data-en="Loans">Prestamos</a></li>
+            <li><a href="finanzas_apc.html" data-es="APC" data-en="APC">APC</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item dropdown">
+          <a href="tutoriales.html" data-es="Tutoriales" data-en="Tutorials">
+            Tutoriales</a>
+          <ul class="dropdown-menu">
+            <li><a href="tutoriales_podcast.html"  data-es="Podcast" data-en="Podcast">Podcast</a></li>
+            <li><a href="tutoriales_asesorias.html"  data-es="Asesorias" data-en="Advisory">Asesorías</a></li>
+            <li><a href="tutoriales_trading.html" data-es="Trading" data-en="Trading">Trading</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item dropdown">
+          <a href="aprende.html" data-es="Aprende" data-en="Learn">
+            Aprende</a>
+          <ul class="dropdown-menu">
+            <li><a href="aprende_glosario.html" data-es="Glosarios" data-en="Glossary">Glosario</a></li>
+            <li><a href="aprende_guias.html" data-es="Guias" data-en="Guides">Guías</a></li>
+            <li><a href="aprende_juegos.html" data-es="Juegos" data-en="Games">Juegos</a></li>
+            <li><a href="aprende_monedas.html" data-es="Monedas" data-en="Coins">Monedas</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item dropdown">
+          <a href="ayuda.html" data-es="Ayuda" data-en="Help">
+            Ayuda</a>
+          <ul class="dropdown-menu">
+            <li><a href="#" data-es="Preguntas Frecuentes" data-en="Frequently Asked Questions">Preguntas Frecuentes</a></li>
+            <li><a href="#" data-es="Contacto" data-en="Contact">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Selector de idioma -->
+      <div class="nav-right">
+        <div class="language-switcher">
+          <img src="img/spain.png" alt="ES" title="Español" onclick="setLang('es')">
+          <img src="img/ingles.png" alt="EN" title="English" onclick="setLang('en')">
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+ <!-- HERO — sección principal de Fraudes -->
+<section class="hero-finanzas-fraudes">
+  <div class="hero-finanzas-fraudes-bg"></div>
+  <div class="hero-finanzas-fraudes-content">
+
+    <!-- Texto izquierda -->
+    <div class="hero-text">
+      <h1>
+        <span data-es="Fraudes" data-en="Fraud">Fraudes</span>
+        <span class="accent"
+              data-es="financieros en Panamá"
+              data-en="Financial Fraud in Panama">
+          financieros en Panamá
+        </span>
+      </h1>
+
+      <p
+        data-es="Conoce los fraudes más comunes y aprende a proteger tu dinero e información."
+        data-en="Learn about the most common frauds and how to protect your money and personal information.">
+        Conoce los fraudes más comunes y aprende a proteger tu dinero e información.
+      </p>
+
+      <p 
+         data-es='"La mejor defensa contra el fraude es la información"'
+         data-en='"The best defense against fraud is information"'>
+        "La mejor defensa contra el fraude es la información"
+      </p>
+    </div>
+
+    <!-- Imagen derecha -->
+    <div class="hero-image">
+      <img src="img/fraudes.png"
+       data-img-es="img/fraudes.png"
+       data-img-en="img/fraudes_en.png"
+       alt="Alerta de fraude">
+    </div>
+  </div>
+</section>
+
+<!-- TARJETAS — tipos de fraude -->
+<section class="cards-section">
+  <div class="cards-grid">
+
+    <div class="card">
+      <h3 data-es="Phishing" data-en="Phishing">Phishing</h3>
+
+      <p
+        data-es="Correos o mensajes falsos que buscan robar tu información personal."
+        data-en="Fake emails or messages designed to steal your personal information.">
+        Correos o mensajes falsos que buscan robar tu información personal.
+      </p>
+
+      <a href="fraudes_Phishing.html"
+         data-es="Saber más →"
+         data-en="Learn More →">
+         Saber más →
+      </a>
+    </div>
+
+    <div class="card">
+      <h3 data-es="Llamadas fraudulentas" data-en="Fraudulent Calls">Llamadas Fraudulentas</h3>
+
+      <p
+        data-es="Llamadas que se hacen pasar por bancos o instituciones para obtener tus datos."
+        data-en="Calls pretending to be from banks or institutions to obtain your personal information.">
+        Llamadas que se hacen pasar por bancos o instituciones para obtener tus datos.
+      </p>
+
+      <a href="fraudes_llamadas.html"
+         data-es="Saber más →"
+         data-en="Learn More →">
+         Saber más →
+      </a>
+    </div>
+
+    <div class="card">
+      <h3 data-es="En compras" data-en="Shopping Scams">
+        En compras
+      </h3>
+
+      <p
+        data-es="Páginas o vendedores falsos que ofrecen productos que no existen o nunca llegan."
+        data-en="Fake websites or sellers offering products that do not exist or never arrive.">
+        Páginas o vendedores falsos que ofrecen productos que no existen o nunca llegan.
+      </p>
+
+      <a href="fraudes_compras.html"
+         data-es="Saber más →"
+         data-en="Learn More →">
+         Saber más →
+      </a>
+    </div>
+
+    <div class="card">
+        <h3 data-es="Suplantación en identidad" data-en="Identity Theft">Suplantación en identidad</h3>
+
+      <p
+        data-es="Usan tus datos personales para abrir cuentas, pedir préstamos o cometer fraudes."
+        data-en="Criminals use your personal information to open accounts, apply for loans, or commit fraud.">
+        Usan tus datos personales para abrir cuentas, pedir préstamos o cometer fraudes.
+      </p>
+
+      <a href="fraudes_suplantacion.html"
+         data-es="Saber más →"
+         data-en="Learn More →">
+         Saber más →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONSEJOS PARA PROTEGERTE -->
+<section class="consejo-section">
+  <div class="consejo-container">
+
+    <!-- Columna izquierda: consejos -->
+    <div class="consejo-texto">
+      <h2 data-es="Consejos para protegerte" data-en="Tips to Protect Yourself">
+        Consejos para protegerte
+      </h2>
+
+      <div class="consejo-item">
+        <p data-es="✓  No compartas tu información personal ni contraseñas."
+           data-en="✓  Never share your personal information or passwords.">
+          ✓  No compartas tu información personal ni contraseñas.
+        </p>
+      </div>
+
+      <div class="consejo-item">
+        <p data-es="✓  Verifica siempre el remitente de correos y mensajes."
+           data-en="✓  Always verify the sender of emails and messages.">
+          ✓  Verifica siempre el remitente de correos y mensajes.
+        </p>
+      </div>
+
+      <div class="consejo-item">
+        <p data-es="✓  No hagas clic en enlaces sospechosos."
+           data-en="✓  Do not click on suspicious links.">
+          ✓  No hagas clic en enlaces sospechosos.
+        </p>
+      </div>
+
+      <div class="consejo-item">
+        <p data-es="✓  Activa la verificación en dos pasos en tus cuentas."
+           data-en="✓  Enable two-factor authentication on your accounts.">
+          ✓  Activa la verificación en dos pasos en tus cuentas.
+        </p>
+      </div>
+
+      <div class="consejo-item">
+        <p data-es="✓  Revisa tus movimientos bancarios con frecuencia."
+           data-en="✓  Check your bank statements frequently.">
+          ✓  Revisa tus movimientos bancarios con frecuencia.
+        </p>
+      </div>
+
+      <div class="consejo-item">
+        <p data-es="✓  Mantén tus dispositivos y aplicaciones actualizados."
+           data-en="✓  Keep your devices and apps up to date.">
+          ✓  Mantén tus dispositivos y aplicaciones actualizados.
+        </p>
+      </div>
+    </div>
+
+    <!-- Columna derecha: qué hacer si eres víctima -->
+    <div class="consejo-derecha">
+      <h2 data-es="¿Qué hacer si eres víctima de fraude?"
+          data-en="What to do if you are a fraud victim?">
+        ¿Qué hacer si eres víctima de fraude?
+      </h2>
+
+      <div class="paso">
+        <div class="paso-numero">1</div>
+        <div class="paso-contenido">
+          <h4 data-es="Ministerio Público" data-en="Public Prosecutor's Office">
+            Ministerio Público
+          </h4>
+          <p>
+            <span data-es="Puede realizar el trámite en línea utilizando la" data-en="You can file the report online through the">Puede realizar el trámite en línea utilizando la</span>
+            <a href="https://www.panamadigital.gob.pa" target="_blank" rel="noopener"
+               data-es="Denuncia por Estafas y Otros Fraudes – Panamá Digital"
+               data-en="Fraud and Scam Report – Panama Digital portal">Denuncia por Estafas y Otros Fraudes – Panamá Digital</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="paso">
+        <div class="paso-numero">2</div>
+        <div class="paso-contenido">
+          <h4 data-es="Línea de Ayuda 311" data-en="Helpline 311">
+            Línea de Ayuda 311
+          </h4>
+          <p>
+            <span data-es="Llame al" data-en="Call the">Llame al</span>
+            <a href="tel:311" data-es="311 Centro de Atención Ciudadana" data-en="311 Citizen Service Center">311 Centro de Atención Ciudadana</a>
+            <span data-es="para reportar su caso y recibir orientación sobre la entidad pertinente." data-en="to report your case and receive guidance on the relevant authority.">para reportar su caso y recibir orientación sobre la entidad pertinente.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="paso">
+        <div class="paso-numero">3</div>
+        <div class="paso-contenido">
+          <h4 data-es="Asesoría Legal" data-en="Legal Advice">
+            Asesoría Legal
+          </h4>
+          <p data-es="Considere la presencia de un abogado idóneo para interponer una querella penal, especialmente si el delito involucra sumas considerables o agravantes."
+             data-en="Consider hiring a qualified attorney to file a criminal complaint, especially if the offense involves significant amounts or aggravating factors.">
+            Considere la presencia de un abogado idóneo para interponer una querella
+            penal, especialmente si el delito involucra sumas considerables o agravantes.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-top-inner">
+
+                <div class="footer-brand">
+                    <h2>
+                        <span data-es="PROTEGE TU DINERO," data-en="SECURE YOUR MONEY,">PROTEGE TU DINERO,</span>
+                        <span class="accent" data-es="ALCANZA TUS OBJETIVOS" data-en="UNLOCK YOUR GOALS">ALCANZA TUS OBJETIVOS</span>
+                    </h2>
+                    <div class="footer-logo">
+                        <img src="img/logo_vaulty+.png" alt="Logo Vaulty+">
+                        <span>Vaulty+</span>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 data-es="Contáctanos" data-en="Contact us">Contáctanos</h3>
+                    <div class="contact-links">
+                        <a href="#" class="footer-icon" aria-label="GitHub" target="_blank" rel="noopener">
+                            <img src="iconos/github.png" alt="GitHub">
+                        </a>
+                        <a href="mailto:info@vaultyplus.com" class="footer-icon" aria-label="Correo">
+                            <img src="iconos/correo.png" alt="Correo">
+                        </a>
+                        <a href="#" class="footer-icon" aria-label="Facebook" target="_blank" rel="noopener">
+                            <img src="iconos/facebook.png" alt="Facebook">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright" data-es="© 2026 Vaulty+ - Todos los derechos reservados." data-en="© 2026 Vaulty+ - All rights reserved.">
+                © 2026 Vaulty+ - Todos los derechos reservados.
+            </p>
+        </div>
+  </footer>
+
+ <script src="finanzas_fraudes.js"></script>
+</body>
+</html>
